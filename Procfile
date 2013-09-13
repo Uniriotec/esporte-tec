@@ -1,1 +1,1 @@
-web: gunicorn esporte_tec/wsgi.py
+web: gunicorn esporte_tec.wsgi.py
