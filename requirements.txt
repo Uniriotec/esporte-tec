@@ -1,2 +1,9 @@
+# esse arquivo aqui vai ser usado pelo heroku,
+# usem o requirements_local.txt pra desenvolver localmente!
+
 Django==1.5.3
 
+# heroku
+gunicorn
+dj-database-url
+dj-static
