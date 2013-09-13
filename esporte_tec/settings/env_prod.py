@@ -3,7 +3,7 @@ import dj_database_url
 
 SITE_ID = 1
 
-DEBUG = False
+DEBUG = True
 SERVE_MEDIA = False
 
 # ver quem vai ser o servidor de midia =S
