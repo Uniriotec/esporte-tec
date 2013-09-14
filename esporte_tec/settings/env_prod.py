@@ -18,6 +18,13 @@ SITE_ID = 1
 DEBUG = True
 SERVE_MEDIA = False
 
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+
 # ver quem vai ser o servidor de midia =S
 #MEDIA_SERVER_URL = 'http://rmr.arruda.blog.br'
 # MEDIA_URL = MEDIA_SERVER_URL+'/media/'
