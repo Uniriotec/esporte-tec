@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    Settings.installed_apps
+    ~~~~~~~~~~~~~~
+
+    aqui possui apenas a lista de apps instaladas
+
+    :copyright: (c) 2013 by arruda.
+"""
 
 INSTALLED_APPS = (
     'django.contrib.auth',

@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    Settings.logging
+    ~~~~~~~~~~~~~~
+
+    Esse arquivo possui os dados de logging (logs)
+
+    :copyright: (c) 2013 by arruda.
+"""
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

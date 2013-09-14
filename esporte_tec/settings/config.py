@@ -1,3 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+    Settings.config
+    ~~~~~~~~~~~~~~
+
+    Aqui ficam as configurações genéricas.
+
+    :copyright: (c) 2013 by arruda.
+"""
 
 from utils import LOCAL
 
