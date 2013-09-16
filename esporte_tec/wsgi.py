@@ -25,9 +25,16 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "esporte_tec.settings")
 # file. This includes Django's development server, if the WSGI_APPLICATION
 # setting points here.
 from django.core.wsgi import get_wsgi_application
-from dj_static import Cling
 
-application = Cling(get_wsgi_application())
+ON_HEROKU = os.environ.has_key('DATABASE_URL')
+
+if ON_HEROKU:
+    from dj_static import Cling
+
+    application = Cling(get_wsgi_application())
+else:
+    application = get_wsgi_application()
+
 
 # Apply WSGI middleware here.
 # from helloworld.wsgi import HelloWorldApplication
