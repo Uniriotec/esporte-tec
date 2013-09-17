@@ -143,6 +143,9 @@ fieldset {
 	margin: 0 auto;
 	padding: 5px 0;
 }
+.top .nav {
+    width: 370px;
+}
 
 .top .nav .facebook {
 	background: url(/static/img/facebook.png) 0 0 no-repeat;
