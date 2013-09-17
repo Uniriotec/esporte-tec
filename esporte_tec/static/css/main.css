@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { font-size: 60px; }
 h2 { font-size: 40px; margin-top: 15px; }
-h3 { font-size: 22px; 
+h3 { font-size: 22px;
 	 letter-spacing: 0px;
 	 border-bottom: 4px solid #d9d9d9;
 	 margin-bottom: 12px;
@@ -46,7 +46,7 @@ h4 { font-size: 1.6em; letter-spacing: 0px; }
 h5 { font-size: 1.4em; letter-spacing: 0px; }
 h6 { font-size: 1.2em; letter-spacing: 0px; }
 
-blockquote { 
+blockquote {
 	margin-right: 0;
 	margin-left: 0;
 }
@@ -62,7 +62,7 @@ cite {
 	display: block;
 	font-size: 16px;
 	text-transform: uppercase;
-	margin-top: 1em;	
+	margin-top: 1em;
 }
 
 a {
@@ -138,18 +138,18 @@ fieldset {
 	width: 100%;
 }
 
-.top { 
+.top {
 	width: 1000px;
 	margin: 0 auto;
 	padding: 5px 0;
-}			
+}
 
 .top .nav .facebook {
-	background: url(../img/facebook.png) 0 0 no-repeat;
+	background: url(/static/img/facebook.png) 0 0 no-repeat;
 	width: 24px;
 	height: 24px;
 	margin-top: 1px;
-	margin-right: 15px; 
+	margin-right: 15px;
 	opacity: 0.25;
 	-moz-opacity: 0.25;
 	filter: alpha(opacity=25); /* ie 5+ */
@@ -169,7 +169,7 @@ fieldset {
 }
 
 .top .nav .twitter {
-	background: url(../img/twitter.png) 0 0 no-repeat;
+	background: url(/static/img/twitter.png) 0 0 no-repeat;
 	width: 24px;
 	height: 24px;
 	margin-top: 2px;
@@ -177,7 +177,7 @@ fieldset {
 	-moz-opacity: 0.25;
 	filter: alpha(opacity=20); /* ie 5+ */
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; /* ie 8 */
-}	
+}
 
 .top .nav .twitter:hover {
 	-webkit-transition: all 0.4s ease-in-out;
@@ -195,7 +195,7 @@ fieldset {
 	width: 210px;
 	margin-left: 25px;
 	margin-right: 20px;
-	position: relative;		
+	position: relative;
 }
 
 .top .nav .search input[type=text] {
@@ -211,13 +211,13 @@ fieldset {
 	margin-bottom: 0;
 }
 
-.top .nav .search input[type=text]:focus {	
-	background: #f9f9f9; 
+.top .nav .search input[type=text]:focus {
+	background: #f9f9f9;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out; 
+	transition: all 0.4s ease-in-out;
 }
 
 .top .nav .search input[type=image] {
@@ -242,8 +242,8 @@ fieldset {
 	color: #fff;
 	text-decoration: none;
 }
-				
-/* ======== Logo ======== */					
+
+/* ======== Logo ======== */
 
 #logo-menu {
 	position: absolute;
@@ -258,7 +258,7 @@ fieldset {
 }
 
 .logo {
-	background: url(../img/logo.png) 0 0 no-repeat;
+	background: url(/static/img/logo.png) 0 0 no-repeat;
 	width: 303px;
 	position: relative;
 	padding: 8px 0 28px 8px;
@@ -269,9 +269,9 @@ fieldset {
 	display: inline-block;
 	padding: 15px 0;
 }
-			
-/* ========= Main Menu ======== */ 	
-		
+
+/* ========= Main Menu ======== */
+
 .main-menu {
 	position: absolute;
 	top: 0;
@@ -303,7 +303,7 @@ fieldset {
 }
 
 #main-nav li:hover {
-	background: url(../img/menu-arrow.png) bottom center no-repeat #bde788;
+	background: url(/static/img/menu-arrow.png) bottom center no-repeat #bde788;
 }
 
 #main-nav li a:hover {
@@ -312,7 +312,7 @@ fieldset {
 }
 
 #main-nav li.current {
-	background: url(../img/menu-arrow.png) bottom center no-repeat #bde788;
+	background: url(/static/img/menu-arrow.png) bottom center no-repeat #bde788;
 }
 
 #main-nav li.current a {
@@ -329,11 +329,11 @@ fieldset {
 	font-size: 12px;
 	position: absolute;
 }
-		
-#main-nav li:hover .submenu { 
-	display: block;	
+
+#main-nav li:hover .submenu {
+	display: block;
 }
-		
+
 #main-nav .submenu li {
 	display: block;
 	-moz-box-shadow: inset 2px 2px 0 rgba(255, 255, 255,.1);
@@ -364,11 +364,11 @@ fieldset {
 	color: #577b27;
 	text-shadow: 0 -1px 0 #ccc;
 }
-		
+
 #main-nav .submenu li:hover {
-	background: #bde788; 
+	background: #bde788;
 }
-					
+
 #main-nav li .sub:hover > a{
 	color: #577b27;
 	border-bottom: 3px solid #577b27;
@@ -378,32 +378,32 @@ fieldset {
 	background: #bde788;
 	color: #577b27;
 }
-					
+
 
 /* ===== Sub Dropdown ===== */
-					
+
 #main-nav ul ul ul{
 	left: 198px !important;
 	top: 0 !important;
 }
 
-/* ========= Sub Content and Page Title ========== */			
-			
-#subcontent { 
-	width: 960px; 
+/* ========= Sub Content and Page Title ========== */
+
+#subcontent {
+	width: 960px;
 	margin: 180px auto 0 auto;
 }
 
-.home-title { 
-	font: 80px/80px 'Baumans', sans-serif; 
-	text-transform: uppercase; 
-	width: 500px; 
+.home-title {
+	font: 80px/80px 'Baumans', sans-serif;
+	text-transform: uppercase;
+	width: 500px;
 }
-		
-.sub-title { 
-	color: #89c758; 
+
+.sub-title {
+	color: #89c758;
 }
-		
+
 /* =========== Content =========== */
 
 #content {
@@ -411,17 +411,17 @@ fieldset {
 	margin: 40px auto;
 }
 
-.entry-content { 
-	margin-right: 10px;  
-	padding-bottom: 10px; 
-} 
-
-.half {	
-	width: 460px; 
+.entry-content {
+	margin-right: 10px;
+	padding-bottom: 10px;
 }
-	
-.members-block { 
-	padding: 20px 0; 
+
+.half {
+	width: 460px;
+}
+
+.members-block {
+	padding: 20px 0;
 }
 
 #members {
@@ -429,11 +429,11 @@ fieldset {
 	width: 100%;
 }
 
-#members img { 
+#members img {
 	margin: 15px;
 }
-			
-			
+
+
 /* ========== Footer ========== */
 
 footer {
@@ -462,12 +462,12 @@ footer ul li {
 	list-style: none;
 	position: relative;
 	font-size: 14px;
-	padding: 2px 0; 
+	padding: 2px 0;
 }
 
 /* ========== Form ========== */
 
-fieldset { 
+fieldset {
 	padding: 1em;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -477,11 +477,11 @@ fieldset {
 	margin-bottom: 1em;
 }
 
-fieldset fieldset { 
-	background: #ffffff; 
+fieldset fieldset {
+	background: #ffffff;
 }
 
-label { 
+label {
 	font-weight: normal;
 	font-family: 'Open Sans', sans-serif;
 	padding-right: 1em;
@@ -542,7 +542,7 @@ button:hover {
     background-color: transparent;
     border: 1px solid #ccc;
     overflow: hidden;
-	
+
     /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
