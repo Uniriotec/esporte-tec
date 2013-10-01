@@ -1,0 +1,32 @@
+/* ==== Sub Content ==== */
+
+.home-title { 
+	font: 80px/85px 'Baumans', sans-serif; 
+	text-transform: uppercase; 
+	width: 500px;
+	position: relative;
+}
+		
+.sub-title { 
+	color: #89c758; 
+}
+
+.triple-helix{
+	width: 840px;
+	position: absolute;
+	margin-left: 130px; 
+}
+
+.empresa{
+	margin-left: 330px;
+}
+
+/* ==== Members ==== */
+
+.members-block { 
+	padding: 10px 0; 
+}
+
+#members img { 
+	margin: 15px;
+}

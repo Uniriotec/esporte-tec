@@ -387,21 +387,11 @@ fieldset {
 	top: 0 !important;
 }
 
-/* ========= Sub Content and Page Title ========== */			
+/* ========= Sub Content ========== */			
 			
 #subcontent { 
 	width: 960px; 
-	margin: 180px auto 0 auto;
-}
-
-.home-title { 
-	font: 80px/80px 'Baumans', sans-serif; 
-	text-transform: uppercase; 
-	width: 500px; 
-}
-		
-.sub-title { 
-	color: #89c758; 
+	margin: 180px auto 200px auto;
 }
 		
 /* =========== Content =========== */
@@ -419,21 +409,7 @@ fieldset {
 .half {	
 	width: 460px; 
 }
-	
-.members-block { 
-	padding: 20px 0; 
-}
-
-#members {
-	margin: 0 auto;
-	width: 100%;
-}
-
-#members img { 
-	margin: 15px;
-}
-			
-			
+				
 /* ========== Footer ========== */
 
 footer {
@@ -444,7 +420,7 @@ footer {
 	border-top: 1px solid ##d9d9d9;
 }
 
-#inner {
+#inner{
 	width: 1000px;
 	margin: 0 auto;
 }
@@ -458,7 +434,7 @@ footer a:hover, a:focus {
 	color: #e0f0d3;
 }
 
-footer ul li {
+footer ul li{
 	list-style: none;
 	position: relative;
 	font-size: 14px;
@@ -508,8 +484,8 @@ textarea{
 	width: 100%;
 	height: 140px;
 	display: block;
+	resize: none;
 	outline: none;
-	resize: vertical;
 }
 
 select, input[type=radio], input[type=checkbox] {
@@ -530,6 +506,7 @@ button:hover {
 	background-color: #89c758;
 }
 
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -542,7 +519,7 @@ button:hover {
     background-color: transparent;
     border: 1px solid #ccc;
     overflow: hidden;
-	
+
     /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
@@ -631,7 +608,7 @@ button:hover {
  */
 
 .clearfix {
-    *zoom: 1;
+	*zoom: 1;
 }
 
 .clear {
