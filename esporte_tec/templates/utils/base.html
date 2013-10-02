@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{% block page-title %}Esporte Tec{% endblock %}</title>
-        <meta name="description" content="{% block meta-description %}{% endblock %}">
+        <meta name="description" content="{% block meta-description %}Esporte e Tecnologia{% endblock %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="keywords" content="{% block meta-keywords %}{% endblock %}" >
@@ -24,7 +24,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ STATIC_URL }}css/normalize.css">
         <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css">
-
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/home.css">
         {% block css-extras %}{% endblock %}
     </head>
     <body>
@@ -38,25 +38,25 @@
                     <div class="nav right clearfix">
                         <a href="#"><div class="ir facebook left"></div></a>
                         <a href="#"><div class="twitter left"></div></a>
-
+                        
                         <div class="search left clearfix">
                             <form action="#">
                                 <input type="text" name="sitesearch" value="Pesquisar...">
-                                <input type="image" name="start_search" src="{{ STATIC_URL }}img/lupa.png" alt="buscar">
+                                <input type="image" name="start_search" value="OK" src="{{ STATIC_URL }}img/lupa.png" alt="buscar">
                             </form>
                         </div>
-
-                        <div class="login right"><a href="#">LOGIN</a></div>
+                        
+                        <div class="login right"><a href="#">LOGIN</a></div>    
                     </div> <!-- End nav class -->
                 </div> <!-- End top class -->
             </div> <!-- End top id -->
-
+            
             <div id="logo-menu">
                 <div class="container clearfix">
                     <div class="logo">
                         <a href="index.html"><img src="{{ STATIC_URL }}img/logo-titulo2.png" alt="Esporte Tec"></a>
                     </div>
-
+                    
                     <div class="main-menu">
                         <nav id="main-nav">
                             <ul>
@@ -81,26 +81,13 @@
             </div> <!-- End logo-menu -->
         </header> <!-- End header -->
 
-        <div id="subcontent">
-            <h2 class="home-title left">
-                <span>Esporte</span>
-                <span>Tecnologia</span>
-                <span class="sub-title">Inovação</span>
-            </h2>
-            <div class="ir right">
-                <img src="" width="400" height="300" alt="Imagem por 400 x 300">
-            </div>
-            <br class="clear">
-        </div> <!-- End subcontent id -->
-
-        <div id="content">
             {% block content %}
             {% endblock %}
-        </div> <!-- End content id -->
-
+                   
     <footer class="clearfix">
         {% block footer %}
-            <div id="inner">
+        <div id="inner">
+                <p class="right" style="margin-top: 150px;">© 2013 Esporte Tec</p>
                 <ul class="left">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Notícias</a></li>
@@ -116,7 +103,6 @@
                     <li><a href="#">Forum de membros</a></li>
                     <li><a href="#">FAQs</a></li>
                 </ul>
-                <p class="right" style="margin-top: 150px;">© 2013 Esporte Tec</p>
             </div>
         {% endblock %}
     </footer>
