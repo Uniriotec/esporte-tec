@@ -145,7 +145,7 @@ fieldset {
 }			
 
 .top .nav .facebook {
-	background: url(../img/facebook.png) 0 0 no-repeat;
+	background: url(/static/img/facebook.png) 0 0 no-repeat;
 	width: 24px;
 	height: 24px;
 	margin-top: 1px;
@@ -169,7 +169,7 @@ fieldset {
 }
 
 .top .nav .twitter {
-	background: url(../img/twitter.png) 0 0 no-repeat;
+	background: url(/static/img/twitter.png) 0 0 no-repeat;
 	width: 24px;
 	height: 24px;
 	margin-top: 2px;
@@ -258,7 +258,7 @@ fieldset {
 }
 
 .logo {
-	background: url(../img/logo.png) 0 0 no-repeat;
+	background: url(/static/img/logo.png) 0 0 no-repeat;
 	width: 303px;
 	position: relative;
 	padding: 8px 0 28px 8px;
@@ -303,7 +303,7 @@ fieldset {
 }
 
 #main-nav li:hover {
-	background: url(../img/menu-arrow.png) bottom center no-repeat #bde788;
+	background: url(/static/img/menu-arrow.png) bottom center no-repeat #bde788;
 }
 
 #main-nav li a:hover {
@@ -312,7 +312,7 @@ fieldset {
 }
 
 #main-nav li.current {
-	background: url(../img/menu-arrow.png) bottom center no-repeat #bde788;
+	background: url(/static/img/menu-arrow.png) bottom center no-repeat #bde788;
 }
 
 #main-nav li.current a {
