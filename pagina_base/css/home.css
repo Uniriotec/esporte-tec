@@ -5,28 +5,39 @@
 	text-transform: uppercase; 
 	width: 500px;
 	position: relative;
+
 }
 		
 .sub-title { 
 	color: #89c758; 
 }
 
-.triple-helix{
-	width: 840px;
-	position: absolute;
-	margin-left: 130px; 
+.join{
+	margin-top: 70px;
+	text-align: center;
 }
 
-.empresa{
-	margin-left: 330px;
+.join p{
+	text-align: center;
 }
 
-/* ==== Members ==== */
-
-.members-block { 
-	padding: 10px 0; 
+.join-button{
+	margin-top: 30px;
+	padding: 10px 25px;
 }
 
-#members img { 
+.join-button a{
+	color: #ffffff;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+/* ==== Partners ==== */
+
+.partners-block { 
+	padding-bottom: 10px; 
+}
+
+#partners img { 
 	margin: 15px;
 }

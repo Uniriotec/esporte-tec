@@ -136,6 +136,7 @@ fieldset {
 	position: relative;
 	z-index: 2;
 	width: 100%;
+	height: 37px;
 }
 
 .top { 
@@ -144,7 +145,7 @@ fieldset {
 	padding: 5px 0;
 }			
 
-.top .nav .facebook {
+.top .nav .socialnetwork1 {
 	background: url(../img/facebook.png) 0 0 no-repeat;
 	width: 24px;
 	height: 24px;
@@ -156,7 +157,7 @@ fieldset {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)"; /* ie 8 */
 }
 
-.top .nav .facebook:hover {
+.top .nav .socialnetwork1:hover {
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
@@ -168,18 +169,18 @@ fieldset {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* ie 8 */
 }
 
-.top .nav .twitter {
-	background: url(../img/twitter.png) 0 0 no-repeat;
+.top .nav .socialnetwork2 {
+	background: url(../img/googlegroups.png) 0 0 no-repeat;
 	width: 24px;
 	height: 24px;
-	margin-top: 2px;
+	margin-top: 1px;
 	opacity: 0.25;
 	-moz-opacity: 0.25;
 	filter: alpha(opacity=20); /* ie 5+ */
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; /* ie 8 */
 }	
 
-.top .nav .twitter:hover {
+.top .nav .socialnetwork2:hover {
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
@@ -191,7 +192,7 @@ fieldset {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* ie 8 */
 }
 
-.top  .nav .search {
+.top .nav .search {
 	width: 210px;
 	margin-left: 25px;
 	margin-right: 20px;
@@ -204,28 +205,34 @@ fieldset {
 	padding: 3px;
 	outline: 0;
 	border: 0;
-	width: 200px;
+	width: 168px;
 	background-color: #f3f3f3;
 	border-radius: 2px;
 	z-index: 2;
-	margin-bottom: 0;
+	margin-bottom: 1px;
 }
 
-.top .nav .search input[type=text]:focus {	
-	background: #f9f9f9; 
+
+.top .nav .search button[type=submit] {
+	margin: 1px 0;
+	padding: 1px 5px;
+	position: absolute;
+	right: 4px;
+	z-index: 3;
+	background-color: #f3f3f3;
+}
+
+.top .nav .search button[type=submit] img {
+	margin-top: -3px;
+}
+
+.top .nav .search button[type=submit]:hover {	
+	background: #dadada; 
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out; 
-}
-
-.top .nav .search input[type=image] {
-	padding: 4px;
-	position: absolute;
-	right: 4px;
-	z-index: 3;
-	border-left: 2px solid #fff;
 }
 
 .top .nav .login a {
@@ -238,7 +245,7 @@ fieldset {
 }
 
 .top .nav .login a:hover {
-	background-color: #b6b6b6;
+	background-color: #dadada;
 	color: #fff;
 	text-decoration: none;
 }
@@ -298,7 +305,7 @@ fieldset {
 	color: #44601e;
 	text-decoration: none;
 	display: inline-block;
-	padding: 42px 18px;
+	padding: 42px 24px;
 	text-transform: uppercase;
 }
 
@@ -391,14 +398,14 @@ fieldset {
 			
 #subcontent { 
 	width: 960px; 
-	margin: 180px auto 200px auto;
+	margin: 180px auto 0 auto;
 }
 		
 /* =========== Content =========== */
 
 #content {
 	width: 980px;
-	margin: 40px auto;
+	margin: 25px auto 40px;
 }
 
 .entry-content { 
@@ -423,16 +430,19 @@ footer {
 #inner{
 	width: 1000px;
 	margin: 0 auto;
+	paddin: 0 15px;
 }
+
+#inner p{ font-size: 12px; }
 
 footer a {
 	text-decoration: none;
 	color: #fff;
 }
 
-footer a:hover, a:focus {
-	color: #e0f0d3;
-}
+footer a:hover, a:focus { color: #e0f0d3; }
+
+footer ul{ margin-right: 40px; padding: 0;}
 
 footer ul li{
 	list-style: none;
@@ -461,10 +471,11 @@ label {
 	font-weight: normal;
 	font-family: 'Open Sans', sans-serif;
 	padding-right: 1em;
+	padding-bottom: 0.25em;
 	display: block;
 }
 
-input[type=text], input[type=email], input[type=password], textearea, input[type=tel], input[type=range], input[type=url]{
+input[type=text], input[type=email], input[type=password], textarea, input[type=tel], input[type=range], input[type=url]{
 	font-family: 'Open Sans', sans-serif;
 	padding: 7px;
 	outline: 0;

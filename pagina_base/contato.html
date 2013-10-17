@@ -7,14 +7,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Esporte Tec</title>
+        <title>Contato - Esporte Tec</title>
         <meta name="description" content="Esporte e Tecnologia">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/home.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -33,7 +32,10 @@
 			}
 		}
 	</script>	<!-- script search input --> 
-			
+
+	<style type="text/css">
+		
+	</style>
 
         <header>
 			<div id="top">
@@ -63,7 +65,7 @@
 					<div class="main-menu">
 						<nav id="main-nav">
 							<ul>
-								<li class="current"><a href="index.html">HOME</a></li>
+								<li><a href="index.html">HOME</a></li>
 								<li><a href="noticias.html">NOTÍCIAS</a></li>
 								<li><a href="membros.html">MEMBROS</a></li>
 								<li class="sub"><a href>CADASTRAR</a>
@@ -76,7 +78,7 @@
 									</ul>
 								</li>
 								<li><a href="sobre.html">SOBRE</a></li>
-								<li><a href="contato.html">CONTATO</a></li>
+								<li class="current"><a href="contato.html">CONTATO</a></li>
 							</ul>
 						</nav>
 					</div> <!-- End main-menu -->
@@ -85,31 +87,18 @@
 		</header> <!-- End header -->
 		
 		<div id="subcontent">
-            		<h2 class="home-title left">
-            			<span>Esporte</span>
-                		<span>Tecnologia</span>
-				<span class="sub-title">Inovação</span>
-			</h2>
-            		<div class="join half right clearfix">
-            			<p>FRASE</p>
-				<button class="join-button"><a href="membros.html">Participe & Explore</a></button>
-            		</div>
+            		<h2>Contato</h2>
             		<div class="clear"></div>
 		</div> <!-- End subcontent id -->
 		
 		<div id="content">	
-            		<div class="partners-block">
-                		<h3>Parceiros</h3> 
-                		<div id="partners">
-                    			<img src="" width="100" height="30" style="background: #fff; border-size: 1px;" alt="Parceiro 1">
-                   			<img src="" width="100" height="30" style="background: #fff; border-size: 1px;" alt="Parceiro 2">
-                    			<img src="" width="100" height="30" style="background: #fff; border-size: 1px;" alt="Parceiro 3">
-                    			<img src="" width="100" height="30" style="background: #fff; border-size: 1px;" alt="Parceiro 4">
-                    			<img src="" width="100" height="30" style="background: #fff; border-size: 1px;" alt="Parceiro 5">
-                    			<img src="" width="100" height="30" style="background: #fff; border-size: 1px;" alt="Parceiro 6">
-                    			<img src="" width="100" height="30" style="background: #fff; border-size: 1px;" alt="Parceiro 7">
-                		</div> <!--- End members id --->
-            		</div> <!--- End members-block class --->
+            		<form>
+				<label>E-mail:</label>
+				<input name="email" type="email">
+				<label>Mensagem:</label>
+				<textarea name="message"></textarea>
+				<button name="submit" type="submit">Enviar</buton> 
+			</form> 
 		</div> <!--- End content id --->
 		
 		<footer class="clearfix">
