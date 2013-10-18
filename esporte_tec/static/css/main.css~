@@ -431,19 +431,6 @@ fieldset {
 	height: 100px;
 	width: 100px;
 }
-
-/* ========== Página Membros =========== */
-
-.members{
-	width: 200px;
-	text-align: center;
-	margin: 0 20px;
-}
-		
-.title-members{
-	text-align: center;
-	font-weight: bold; 
-}
 				
 /* ========== Footer ========== */
 

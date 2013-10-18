@@ -32,18 +32,31 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+	<script type="text/javascript">		
+		function clearText(field){
+			if(field.value == field.defaultValue){
+				field.value = "";
+			}
+		}
+		function writeText(field){
+			if(field.value == ""){
+				field.value = field.defaultValue;
+			}
+		}
+	</script>	<!-- script search input --> 
+
         <header>
             <div id="top">
                 <div class="top clearfix">
                     <div class="nav right clearfix">
-                        <a href="#"><div class="ir facebook left"></div></a>
-                        <a href="#"><div class="twitter left"></div></a>
+                        <a href="https://www.facebook.com/EsporteTec"><div class="socialnetwork1 left"></div></a>
+                        <a href="https://groups.google.com/forum/#!forum/esporte_tec"><div class="socialnetwork2 left"></div></a>
                         
                         <div class="search left clearfix">
                             <form action="#">
-                                <input type="text" name="sitesearch" value="Pesquisar...">
-                                <input type="image" name="start_search" value="OK" src="{{ STATIC_URL }}img/lupa.png" alt="buscar">
-                            </form>
+								<input type="text" name="sitesearch" value="Pesquisar..." onfocus="clearText(this);" onblur="writeText(this);">
+								<button type="submit" name="start_search" value="OK" alt="buscar"><img src="img/lupa.png"></button>
+							</form>
                         </div>
                         
                         <div class="login right"><a href="#">LOGIN</a></div>    
@@ -61,8 +74,8 @@
                         <nav id="main-nav">
                             <ul>
                                 <li class="current"><a href="index.html">HOME</a></li>
-                                <li><a href="#">NOTÍCIAS</a></li>
-                                <li><a href="#">MEMBROS</a></li>
+                                <li><a href="noticias.html">NOTÍCIAS</a></li>
+                                <li><a href="membros.html">MEMBROS</a></li>
                                 <li class="sub"><a href>CADASTRAR</a>
                                     <ul class="submenu">
                                         <li><a href="#">Seja um membro</a></li>
@@ -72,8 +85,8 @@
                                         <li><a href="#">FAQs</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">QUEM SOMOS</a></li>
-                                <li><a href="#">CONTATO</a></li>
+                                <li><a href="sobre.html">SOBRE</a></li>
+                                <li><a href="contato.html">CONTATO</a></li>
                             </ul>
                         </nav>
                     </div> <!-- End main-menu -->
@@ -87,22 +100,30 @@
     <footer class="clearfix">
         {% block footer %}
         <div id="inner">
-                <p class="right" style="margin-top: 150px;">© 2013 Esporte Tec</p>
+                <p class="right" style="margin-top: 150px;">© 2013 Esporte Tec | Site Desenvolvido pela <a href="http://www.uniriotec.com">UnirioTec Consultoria</a></p>
                 <ul class="left">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Membros</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
+					<li><b>Menu</b></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="noticias.html">Notícias</a></li>
+					<li><a href="membros.html">Membros</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
                 <ul class="left">
-                    <li><u>Cadastrar</u></li>
-                    <li><a href="#">Seja um membro</a></li>
-                    <li><a href="#">Quem pode participar</a></li>
-                    <li><a href="#">Por que participar</a></li>
-                    <li><a href="#">Forum de membros</a></li>
-                    <li><a href="#">FAQs</a></li>
-                </ul>
+					<li><b>Cadastrar</b></li>
+					<li><a href="#">Seja um membro</a></li>
+					<li><a href="#">Quem pode participar</a></li>
+					<li><a href="#">Por que participar</a></li>
+					<li><a href="#">Forum de membros</a></li>
+					<li><a href="#">FAQs</a></li>
+				</ul>
+
+		<ul class="left">
+					<li><b>Conecte-se</b></li>
+					<li><a href="https://www.facebook.com/EsporteTec">Facebook</a></li>
+					<li><a href="https://groups.google.com/forum/#!forum/esporte_tec">Google Groups</a></li>
+		</ul>
+
             </div>
         {% endblock %}
     </footer>

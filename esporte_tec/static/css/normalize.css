@@ -27,9 +27,7 @@ summary {
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
-audio,
-canvas,
-video {
+audio, canvas, video {
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -76,13 +74,7 @@ html {
  * elements.
  */
 
-html,
-button,
-input,
-select,
-textarea {
-    font-family: sans-serif;
-}
+html, button, input, select, textarea { font-family: sans-serif; }
 
 /**
  * Address margins handled incorrectly in IE 6/7.
@@ -100,18 +92,13 @@ body {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-a:focus {
-    outline: thin dotted;
-}
+a:focus { outline: thin dotted; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 
-a:active,
-a:hover {
-    outline: 0;
-}
+a:active, a:hover { outline: 0; }
 
 /* ==========================================================================
    Typography
@@ -165,8 +152,7 @@ abbr[title] {
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
 
-b,
-strong {
+b, strong {
     font-weight: bold;
 }
 
@@ -206,8 +192,7 @@ mark {
  * Address margins set differently in IE 6/7.
  */
 
-p,
-pre {
+p, pre {
     margin: 1em 0;
 }
 
@@ -215,10 +200,7 @@ pre {
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
     font-family: monospace, serif;
     _font-family: 'courier new', monospace;
     font-size: 1em;
@@ -264,8 +246,7 @@ small {
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 
-sub,
-sup {
+sub, sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -288,10 +269,7 @@ sub {
  * Address margins set differently in IE 6/7.
  */
 
-dl,
-menu,
-ol,
-ul {
+dl, menu, ol, ul {
     margin: 1em 0;
 }
 
@@ -303,9 +281,7 @@ dd {
  * Address paddings set differently in IE 6/7.
  */
 
-menu,
-ol,
-ul {
+menu, ol, ul {
     padding: 0 0 0 40px;
 }
 
@@ -395,10 +371,7 @@ legend {
  * 3. Improve appearance and consistency in all browsers.
  */
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
     font-size: 100%; /* 1 */
     margin: 0; /* 2 */
     vertical-align: baseline; /* 3 */
@@ -410,8 +383,7 @@ textarea {
  * the UA stylesheet.
  */
 
-button,
-input {
+button, input {
     line-height: normal;
 }
 
@@ -422,8 +394,7 @@ input {
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
 
-button,
-select {
+button, select {
     text-transform: none;
 }
 
