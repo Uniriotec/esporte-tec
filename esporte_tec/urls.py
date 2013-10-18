@@ -8,6 +8,7 @@ from django.views.generic import TemplateView
 urlpatterns = patterns('',
 
      url(r'^$', TemplateView.as_view(template_name="index.html"), name='index'),
+     url(r'^membros/$', TemplateView.as_view(template_name="membros.html"), name='membros'),
     # Examples:
     # url(r'^$', 'esporte_tec.views.home', name='home'),
     # url(r'^esporte_tec/', include('esporte_tec.foo.urls')),
