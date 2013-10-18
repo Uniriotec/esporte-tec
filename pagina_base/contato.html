@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html lang="pt-br"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -20,7 +20,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-	<script type="text/javascript">		
+	<script type="text/javascript">
 		function clearText(field){
 			if(field.value == field.defaultValue){
 				field.value = "";
@@ -31,10 +31,10 @@
 				field.value = field.defaultValue;
 			}
 		}
-	</script>	<!-- script search input --> 
+	</script>	<!-- script search input -->
 
 	<style type="text/css">
-		
+
 	</style>
 
         <header>
@@ -43,25 +43,25 @@
 					<div class="nav right clearfix">
 						<a href="https://www.facebook.com/EsporteTec"><div class="socialnetwork1 left" title="facebook"></div></a>
 						<a href="https://groups.google.com/forum/#!forum/esporte_tec"><div class="socialnetwork2 left" title="google groups"></div></a>
-						
+
 						<div class="search left clearfix">
 							<form action="#">
 								<input type="text" name="sitesearch" value="Pesquisar..." onfocus="clearText(this);" onblur="writeText(this);">
 								<button type="submit" name="start_search" value="OK" alt="buscar"><img src="img/lupa.png"></button>
 							</form>
 						</div>
-						
-						<div class="login right"><a href="#">LOGIN</a></div>	
+
+						<div class="login right"><a href="#">LOGIN</a></div>
 					</div> <!-- End nav class -->
 				</div> <!-- End top class -->
 			</div> <!-- End top id -->
-			
+
 			<div id="logo-menu">
 				<div class="container clearfix">
 					<div class="logo">
-						<a href="index.html"><img src="img/logo-titulo2.png" alt="Esporte Tec"></a>
+						<a href="{% url "index" %}"><img src="img/logo-titulo2.png" alt="Esporte Tec"></a>
 					</div>
-					
+
 					<div class="main-menu">
 						<nav id="main-nav">
 							<ul>
@@ -85,22 +85,22 @@
 				</div> <!-- End container -->
 			</div> <!-- End logo-menu -->
 		</header> <!-- End header -->
-		
+
 		<div id="subcontent">
             		<h2>Contato</h2>
             		<div class="clear"></div>
 		</div> <!-- End subcontent id -->
-		
-		<div id="content">	
+
+		<div id="content">
             		<form>
 				<label>E-mail:</label>
 				<input name="email" type="email">
 				<label>Mensagem:</label>
 				<textarea name="message"></textarea>
-				<button name="submit" type="submit">Enviar</buton> 
-			</form> 
+				<button name="submit" type="submit">Enviar</buton>
+			</form>
 		</div> <!--- End content id --->
-		
+
 		<footer class="clearfix">
 			<div id="inner">
 				<p class="right" style="margin-top: 150px;">© 2013 Esporte Tec | Site Desenvolvido pela <a href="http://www.uniriotec.com">UnirioTec Consultoria</a></p>

@@ -67,14 +67,14 @@
             <div id="logo-menu">
                 <div class="container clearfix">
                     <div class="logo">
-                        <a href="index.html"><img src="{{ STATIC_URL }}img/logo-titulo2.png" alt="Esporte Tec"></a>
+                        <a href="{% url "index" %}"><img src="{{ STATIC_URL }}img/logo-titulo2.png" alt="Esporte Tec"></a>
                     </div>
 
                     <div class="main-menu">
                         <nav id="main-nav">
                             <ul>
-                                <li class="current"><a href="index.html">HOME</a></li>
-                                <li><a href="noticias.html">NOTÍCIAS</a></li>
+                                <li class="current"><a href="{% url "index" %}">HOME</a></li>
+                                <li><a href="{% url "noticias" %}">NOTÍCIAS</a></li>
                                 <li><a href="{% url "membros" %}">MEMBROS</a></li>
                                 <li class="sub"><a href>CADASTRAR</a>
                                     <ul class="submenu">
@@ -85,8 +85,8 @@
                                         <li><a href="#">FAQs</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="sobre.html">SOBRE</a></li>
-                                <li><a href="contato.html">CONTATO</a></li>
+                                <li><a href="{% url "sobre" %}">SOBRE</a></li>
+                                <li><a href="{% url "contato" %}">CONTATO</a></li>
                             </ul>
                         </nav>
                     </div> <!-- End main-menu -->
@@ -103,11 +103,11 @@
                 <p class="right" style="margin-top: 150px;">© 2013 Esporte Tec | Site Desenvolvido pela <a href="http://www.uniriotec.com">UnirioTec Consultoria</a></p>
                 <ul class="left">
 					<li><b>Menu</b></li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="noticias.html">Notícias</a></li>
+					<li><a href="{% url "index" %}">Home</a></li>
+					<li><a href="{% url "noticias" %}">Notícias</a></li>
 					<li><a href="{% url "membros" %}">Membros</a></li>
-					<li><a href="sobre.html">Sobre</a></li>
-					<li><a href="contato.html">Contato</a></li>
+					<li><a href="{% url "sobre" %}">Sobre</a></li>
+					<li><a href="{% url "contato" %}">Contato</a></li>
 				</ul>
                 <ul class="left">
 					<li><b>Cadastrar</b></li>
