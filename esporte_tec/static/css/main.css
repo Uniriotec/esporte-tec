@@ -408,6 +408,13 @@ fieldset {
 	margin: 25px auto 40px;
 }
 
+#aviso p{
+	text-align: center;
+	font-style: italic;
+	
+
+}
+
 .entry-content { 
 	margin-right: 10px;  
 	padding-bottom: 10px; 
@@ -448,7 +455,7 @@ fieldset {
 /* ========== Footer ========== */
 
 footer {
-	width: 100%;
+	width: 1000px;
 	background-color: #89c758;
 	position: relative;
 	color: #fff;
@@ -457,8 +464,8 @@ footer {
 
 #inner{
 	width: 1000px;
-	margin: 0 auto;
-	paddin: 0 15px;
+	margin: 0 15px;
+	padding: 0 15px;
 }
 
 #inner p{ font-size: 12px; }
