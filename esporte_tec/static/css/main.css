@@ -455,7 +455,7 @@ fieldset {
 /* ========== Footer ========== */
 
 footer {
-	width: 1000px;
+	width: 100%;
 	background-color: #89c758;
 	position: relative;
 	color: #fff;
@@ -465,7 +465,7 @@ footer {
 #inner{
 	width: 1000px;
 	margin: 0 15px;
-	padding: 0 15px;
+	padding: 0 auto;
 }
 
 #inner p{ font-size: 12px; }
