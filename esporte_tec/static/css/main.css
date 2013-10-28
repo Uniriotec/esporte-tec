@@ -305,7 +305,7 @@ fieldset {
 	color: #44601e;
 	text-decoration: none;
 	display: inline-block;
-	padding: 42px 21px 42px 25px;
+	padding: 42px 18px;
 	text-transform: uppercase;
 }
 
@@ -329,7 +329,7 @@ fieldset {
 
 #main-nav li .submenu {
 	display: none;
-	width: 180px;
+	width: 190px;
 	left: 0;
 	margin-top: -1px;
 	font-family: "Arial";
