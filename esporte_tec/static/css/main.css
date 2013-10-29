@@ -406,10 +406,11 @@ fieldset {
 } 
 
 #subcontent ul {
-	margin: -20px 0px 20px 0px;
+	margin: -20px 0px 40px 0px;
 	padding: 0;
 	list-style: none;
 	width: 150px;
+	
 }
 
 #subcontent ul li{
