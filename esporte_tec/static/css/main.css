@@ -510,7 +510,7 @@ footer {
 #inner{
 	width: 1000px;
 	margin: 0 auto;
-	padding: 0 auto;
+	padding: 0;
 }
 
 #inner p{ font-size: 12px; }
