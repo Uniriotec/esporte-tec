@@ -1,0 +1,27 @@
+{% extends "utils/base.html"%}
+{% block content %}
+<div id="subcontent">
+            		<h2>Notícias</h2>
+			<ul class="right">
+				<li><b><a href>Outros Links</a></b>
+				<ul>
+					<li><a href="{% url "editais" %}">Editais</a></li>
+					<li><a href="{% url "noticias" %}">Notícias</a></li>
+				</ul>
+				</li>
+			</ul>
+			<h4>Políticas Públicas</h4>
+            		<div class="clear"></div>
+			
+		</div> <!-- End subcontent id -->
+		
+		<div id="content">	
+            		
+			
+			<section class="news"><img src="" alt="Imagem"><h3>Lorem Ipsum</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel mi sed tellus semper sollicitudin. Sed mattis augue sed nisi bibendum molestie vel vitae quam.</p></section>
+
+			<section class="news"><img src="" alt="Imagem"><h3>Lorem Ipsum</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel mi sed tellus semper sollicitudin. Sed mattis augue sed nisi bibendum molestie vel vitae quam.</p></section>
+		</div> <!--- End content id --->
+{% endblock %}
