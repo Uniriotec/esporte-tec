@@ -36,6 +36,9 @@ class Edital(AbsLink):
     Representa um link para um edital no sistema
     Herda de AbsLink
     """
+
+    orgao_governo = models.ForeignKey('colaboradores.OrgaoGoverno',related_name='editais')
+
     class Meta:
         verbose_name_plural = "editais"
 
