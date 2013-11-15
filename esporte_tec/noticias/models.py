@@ -2,6 +2,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 class AbsLink(models.Model):
     """
     Classe abstrata que possui dados genericos de uma referencia para um link
@@ -28,8 +29,6 @@ class Noticia(AbsLink):
 
     def __unicode__(self):
         return self.titulo
-
-
 
 
 class Edital(AbsLink):
