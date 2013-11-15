@@ -39,7 +39,6 @@ class OrgaoGoverno(models.Model):
 	def __unicode__(self):
 		return "%s - %s - %s - %s - %s - %s" % (self.razao_social, self.contato, self.departamento, self.email, self.area_interesse, self.telefone)
 
-
 class Academia(models.Model):
 	"""
 	Model de cadastro de Academia
