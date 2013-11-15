@@ -2,6 +2,7 @@
 # usem o requirements_local.txt pra desenvolver localmente!
 
 Django==1.5.3
+django-mptt==0.6.0
 
 # heroku
 dj-database-url==0.2.2
