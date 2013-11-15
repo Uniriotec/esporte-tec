@@ -18,7 +18,7 @@ class Colaborador(models.Model):
 		return "%s - %s - %s" % (self.nome_colaborador, self.email_colaborador, self.area_interesse)
 
 
-class Governo(models.Model):
+class OrgaoGoverno(models.Model):
 	"""
 	Model de cadastro de Governo
 	"""
