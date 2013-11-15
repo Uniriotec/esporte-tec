@@ -9,13 +9,15 @@ class Colaborador(models.Model):
 	Model responsável pelos Colaboradores
 	"""
 
-	nome_colaborador = models.CharField("Nome", max_length=250)
-	email_colaborador = models.CharField("Email", max_length=250)
+	nome = models.CharField("Nome", max_length=250)
+	email = models.EmailField("Email", max_length=250)
 	area_interesse = models.CharField("Área de interesse", max_length=250)
-
+	
+	class Meta:
+		verbose_name_plural = "Colaboradores"
 
 	def __unicode__(self):
-		return "%s - %s - %s" % (self.nome_colaborador, self.email_colaborador, self.area_interesse)
+		return "%s - %s - %s" % (self.nome, self.email, self.area_interesse)
 
 
 class OrgaoGoverno(models.Model):
@@ -48,4 +50,25 @@ class Academia(models.Model):
 
 	def __unicode__(self):
 		return "%s - %s - %s - %s - %s - %s - %s" % (self.razao_social_academia, self.contato_academia, self.departamento_academia, self.email_academia, self.telefone_academia, self.area_pesquisa, self.area_interesse_academia)
+
+class Startup(models.Model):
+    """
+    Model para o cadastro de Startups
+    Area inovação e com usted Arruda
+    """	
+
+    razao_social = models.CharField("Razão Social", max_length=250)
+    nome_fantasia = models.CharField("Nome fantasia", max_length=250)
+    site = models.CharField("Site", max_length=250)
+    email = models.EmailField("Email", max_length=250)
+    telefone = models.CharField("Telefone", max_length=40)
+    nome = models.CharField("Nome", max_length=40)
+    pessoa_para_contato = models.CharField("Pessoa para contato",max_length=250)
+
+    class Meta:
+    	verbose_name_plural = "Startups"
+
+    def __unicode__(self):
+        return "%s - %s - %s - %s - %s -%s - %s" % (self.razao_social, self.nome_fantasia, self.site, self.email, self.telefone, self.nome, self.pessoa_para_contato)
+
 
