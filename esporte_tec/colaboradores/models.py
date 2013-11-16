@@ -11,8 +11,9 @@ class Colaborador(models.Model):
 
 	nome = models.CharField("Nome", max_length=250)
 	email = models.EmailField("Email", max_length=250)
-	area_interesse = models.CharField("Área de interesse", max_length=250)
-	
+	area_interesse = models.ManyToManyField('areas.Area', verbose_name="Área de Interesse")
+
+
 	class Meta:
 		verbose_name_plural = "Colaboradores"
 
