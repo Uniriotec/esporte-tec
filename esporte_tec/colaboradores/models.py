@@ -36,8 +36,8 @@ class OrgaoGoverno(models.Model):
     telefone = models.CharField("Telefone", max_length=40)
 
     class Meta:
-        verbose_name_plural = "Orgãos Governamentais"
-        verbose_name = "Orgão Governamental"
+        verbose_name_plural = "Instituições Governamentais"
+        verbose_name = "Instituição Governamental"
 
     def __unicode__(self):
         return "%s - %s - %s - %s - %s" % (self.razao_social, self.contato, self.departamento, self.email, self.telefone)
