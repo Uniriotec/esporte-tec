@@ -48,3 +48,16 @@ class Edital(AbsLink):
 
     def __unicode__(self):
         return self.titulo
+
+class PoliticaPublica(AbsLink):
+    """
+    Representa um link para uma Politica Publica no sistema
+    Herda de AbsLink
+    """
+
+    class Meta:
+        verbose_name_plural = "políticas públicas"
+        verbose_name = "política pública"
+
+    def __unicode__(self):
+        return self.titulo
