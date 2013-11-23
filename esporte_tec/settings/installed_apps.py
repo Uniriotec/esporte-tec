@@ -23,5 +23,4 @@ INSTALLED_APPS = (
     'esporte_tec.areas',
     'esporte_tec.membros',
     'esporte_tec.noticias',
-    'esporte_tec.startups',
 )
