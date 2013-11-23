@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from django.contrib import admin
-from esporte_tec.colaboradores.models import Colaborador
-from esporte_tec.colaboradores.models import OrgaoGoverno
-from esporte_tec.colaboradores.models import Academia
+from esporte_tec.membros.models import Colaborador
+from esporte_tec.membros.models import OrgaoGoverno
+from esporte_tec.membros.models import Academia
 
 
 admin.site.register(Colaborador, admin.ModelAdmin)

@@ -38,7 +38,7 @@ class Edital(AbsLink):
     """
 
     orgao_governo = models.ForeignKey(
-            'colaboradores.OrgaoGoverno',
+            'membros.OrgaoGoverno',
             related_name='editais',
             verbose_name="Orgão do Governo"
     )
