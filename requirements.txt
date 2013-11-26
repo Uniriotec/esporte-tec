@@ -4,6 +4,7 @@
 Django==1.5.3
 django-mptt==0.6.0
 django-model-utils==1.1.0
+django-annoying==0.7.7
 
 # heroku
 dj-database-url==0.2.2
