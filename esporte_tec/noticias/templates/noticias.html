@@ -17,8 +17,7 @@
 		<div id="content">
 
             {% for noticia in noticias %}
-    			<section class="news"><img src="" alt="Imagem"><h3>{{ noticia.titulo }}</h3>
-                {% if noticia.link %}<a href="{{ noticia.link }}">{% endif %}<p style="color:black;">{{ noticia.descricao }}</p>{% if noticia.link %}</a>{% endif %}</section>
+                {% include "_link.html" with link=noticia %}
             {% endfor %}
 
 		</div> <!--- End content id --->

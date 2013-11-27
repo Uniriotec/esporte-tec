@@ -10,6 +10,7 @@ class AbsLink(models.Model):
     de OO
     """
 
+    link_imagem = models.URLField("Link Para Imagem",max_length=250, blank=True, null=True)
     link = models.URLField("Link",max_length=250, blank=True, null=True)
     titulo = models.CharField("Título", max_length=250, blank=False, null=False)
     descricao = models.TextField("Descrição")

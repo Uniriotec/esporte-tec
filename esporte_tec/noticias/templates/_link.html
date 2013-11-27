@@ -1,0 +1,2 @@
+<section class="news"><img src="{% if link.link_imagem %}{{ link.link_imagem }}{% else %}{{ STATIC_URL }}img/favicon.ico{% endif %}" width="100" height="100" alt="Imagem"><h3>{{ link.titulo }}</h3>
+{% if link.link %}<a href="{{ link.link }}">{% endif %}<p style="color:black;">{{ link.descricao }}</p>{% if link.link %}</a>{% endif %}</section>

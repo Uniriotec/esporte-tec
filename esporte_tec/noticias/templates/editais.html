@@ -17,8 +17,7 @@
 		<div id="content">
 
             {% for edital in editais %}
-    			<section class="news"><img src="" alt="Imagem"><h3>{{ edital.titulo }}</h3>
-                {% if edital.link %}<a href="{{ edital.link }}">{% endif %}<p style="color:black;">{{ edital.descricao }}</p>{% if edital.link %}</a>{% endif %}</section>
+                {% include "_link.html" with link=edital %}
             {% endfor %}
 
 		</div> <!--- End content id --->

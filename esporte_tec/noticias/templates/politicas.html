@@ -17,8 +17,7 @@
 		<div id="content">
 
             {% for politica in politicas %}
-    			<section class="news"><img src="" alt="Imagem"><h3>{{ politica.titulo }}</h3>
-                {% if politica.link %}<a href="{{ politica.link }}">{% endif %}<p style="color:black;">{{ politica.descricao }}</p>{% if edital.link %}</a>{% endif %}</section>
+                {% include "_link.html" with link=politica %}
             {% endfor %}
 
 		</div> <!--- End content id --->
