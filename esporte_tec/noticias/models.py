@@ -37,10 +37,27 @@ class Edital(AbsLink):
     Herda de AbsLink
     """
 
-    orgao_governo = models.ForeignKey('colaboradores.OrgaoGoverno',related_name='editais')
+    orgao_governo = models.ForeignKey(
+            'membros.OrgaoGoverno',
+            related_name='editais',
+            verbose_name="Orgão do Governo"
+    )
 
     class Meta:
         verbose_name_plural = "editais"
+
+    def __unicode__(self):
+        return self.titulo
+
+class PoliticaPublica(AbsLink):
+    """
+    Representa um link para uma Politica Publica no sistema
+    Herda de AbsLink
+    """
+
+    class Meta:
+        verbose_name_plural = "políticas públicas"
+        verbose_name = "política pública"
 
     def __unicode__(self):
         return self.titulo

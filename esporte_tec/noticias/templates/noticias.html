@@ -1,0 +1,25 @@
+{% extends "utils/base.html"%}
+{% block content %}
+<div id="subcontent">
+            		<h2>Notícias</h2>
+			<ul class="right">
+				<li><b><a href>Outros Links</a></b>
+				<ul>
+					<li><a href="{% url "editais" %}">Editais</a></li>
+					<li><a href="{% url "politicas" %}">Políticas Públicas</a></li>
+				</ul>
+				</li>
+			</ul>
+            		<div class="clear"></div>
+
+		</div> <!-- End subcontent id -->
+
+		<div id="content">
+
+            {% for noticia in noticias %}
+    			<section class="news"><img src="" alt="Imagem"><h3>{{ noticia.titulo }}</h3>
+                {% if noticia.link %}<a href="{{ noticia.link }}">{% endif %}<p style="color:black;">{{ noticia.descricao }}</p>{% if noticia.link %}</a>{% endif %}</section>
+            {% endfor %}
+
+		</div> <!--- End content id --->
+{% endblock %}

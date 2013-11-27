@@ -21,6 +21,6 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'mptt',
     'esporte_tec.areas',
-    'esporte_tec.colaboradores',
+    'esporte_tec.membros',
     'esporte_tec.noticias',
 )
