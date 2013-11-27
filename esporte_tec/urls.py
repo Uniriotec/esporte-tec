@@ -14,6 +14,7 @@ urlpatterns = patterns('',
 
 
      url(r'^', include('esporte_tec.noticias.urls')),
+     url(r'^', include('esporte_tec.membros.urls')),
      
      
      # url(r'^noticias/$', TemplateView.as_view(template_name="noticias.html"), name='noticias'),
