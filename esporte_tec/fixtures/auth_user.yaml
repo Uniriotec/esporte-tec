@@ -1,0 +1,30 @@
+- fields:
+    date_joined: 2013-11-27 18:22:37.617734+00:00
+    email: contato@uniriotec.com
+    first_name: ''
+    groups: []
+    is_active: true
+    is_staff: true
+    is_superuser: true
+    last_login: 2013-11-27 18:23:04.763957+00:00
+    last_name: ''
+    password: pbkdf2_sha256$10000$av4UPcQFsSX8$bmyPj+9813kpqKZJG/hrqPOTzdPyUBGg7hULUC/CJFM=
+    user_permissions: []
+    username: uniriotec
+  model: auth.user
+  pk: 1
+- fields:
+    date_joined: 2013-11-27 18:23:19+00:00
+    email: ''
+    first_name: ''
+    groups: []
+    is_active: true
+    is_staff: true
+    is_superuser: true
+    last_login: 2013-11-27 18:23:19+00:00
+    last_name: ''
+    password: pbkdf2_sha256$10000$eZqRtiHsFrMR$mQYcPsgZLIREofoaE9sE5HaFux6CBzMwui1RZskYWzQ=
+    user_permissions: []
+    username: esporte-tec
+  model: auth.user
+  pk: 2

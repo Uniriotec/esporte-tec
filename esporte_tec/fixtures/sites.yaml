@@ -1,0 +1,3 @@
+- fields: {domain: esporte-tec.com.br, name: esporte-tec.com.br}
+  model: sites.site
+  pk: 1
