@@ -1,0 +1,25 @@
+{% extends "utils/base.html"%}
+{% block content %}
+<div id="subcontent">
+            		<h2>Políticas Públicas</h2>
+			<ul class="right">
+				<li><b><a href>Outros Links</a></b>
+				<ul>
+					<li><a href="{% url "editais" %}">Editais</a></li>
+					<li><a href="{% url "noticias" %}"> Notícias</a></li>
+				</ul>
+				</li>
+			</ul>
+            		<div class="clear"></div>
+
+		</div> <!-- End subcontent id -->
+
+		<div id="content">
+
+            {% for politica in politicas %}
+    			<section class="news"><img src="" alt="Imagem"><h3>{{ politica.titulo }}</h3>
+                {% if politica.link %}<a href="{{ politica.link }}">{% endif %}<p style="color:black;">{{ politica.descricao }}</p>{% if edital.link %}</a>{% endif %}</section>
+            {% endfor %}
+
+		</div> <!--- End content id --->
+{% endblock %}
