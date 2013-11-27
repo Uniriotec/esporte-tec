@@ -1,0 +1,25 @@
+{% extends "utils/base.html"%}
+{% block content %}
+<div id="subcontent">
+            		<h2>Editais</h2>
+			<ul class="right">
+				<li><b><a href>Outros Links</a></b>
+				<ul>
+					<li><a href="{% url "noticias" %}">Notícias</a></li>
+					<li><a href="{% url "politicas" %}">Políticas Públicas</a></li>
+				</ul>
+				</li>
+			</ul>
+            		<div class="clear"></div>
+
+		</div> <!-- End subcontent id -->
+
+		<div id="content">
+
+            {% for edital in editais %}
+    			<section class="news"><img src="" alt="Imagem"><h3>{{ edital.titulo }}</h3>
+                {% if edital.link %}<a href="{{ edital.link }}">{% endif %}<p style="color:black;">{{ edital.descricao }}</p>{% if edital.link %}</a>{% endif %}</section>
+            {% endfor %}
+
+		</div> <!--- End content id --->
+{% endblock %}
