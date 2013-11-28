@@ -16,7 +16,7 @@ def cadastrar_empresa(request):
         if form.is_valid():
             form.save()
             # criar uma pagina de "cadastro realizado com sucesso e redirecionar para ela no lugar da home
-            return redirect('index')
+            return redirect('sucesso')
 
     else:
         # cria um formulario em branco
