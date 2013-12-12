@@ -1,40 +1,14 @@
 {% extends "utils/base.html"%}
 {% block content %}
 <div id="subcontent">
-       		<h2>Membros</h2>
+       		<h2>Membros (Página em período de Construção)</h2>
        		<div class="clear"></div>
 		</div> <!-- End subcontent id -->
 		
 		<div id="content">	
-            		<section class="members left">
-				<img src="{{ STATIC_URL }}img/colaborador.png" alt="Colaborador">
-				<p class="title-members">Colaborador</p>				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel mi sed tellus semper sollicitudin. Sed mattis augue sed nisi bibendum molestie vel vitae quam.</p>
-				<button>Cadastrar-se</button>
-			</section>
-			
-			<section class="members left">
-				<img src="{{ STATIC_URL }}img/empresa.png" alt="Empresa">
-				<p class="title-members">Empresa</p>				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel mi sed tellus semper sollicitudin. Sed mattis augue sed nisi bibendum molestie vel vitae quam.</p>
-				<button onclick="window.location.href='{% url "cadastro_empresa" %}'">Cadastrar-se</button>
-			</section>
+            	
+				<img src="{{ STATIC_URL }}img/construcao.jpg" alt="Em construção">
 
-			<section class="members left">
-				<img src="{{ STATIC_URL }}img/governo.png" alt="Governo">
-				<p class="title-members">Inst. Governamental</p>				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel mi sed tellus semper sollicitudin. Sed mattis augue sed nisi bibendum molestie vel vitae quam.</p>
-				<button>Cadastrar-se</button>
-			</section>
-
-			<section class="members left">
-				<img src="{{ STATIC_URL }}img/academia.png" alt="Academia">
-				<p class="title-members">Instituição Acadêmica</p>				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel mi sed tellus semper sollicitudin. Sed mattis augue sed nisi bibendum molestie vel vitae quam.</p>
-				<button>Cadastrar-se</button>
-			</section>
-
-			<br class="clear">
 
 		</div> <!--- End content id --->
 {% endblock %}

@@ -1,0 +1,21 @@
+{% extends "utils/base.html"%}
+{% block content %}
+
+<div id="subcontent">
+            <h2>Cadastre-se Aqui</h2>
+            <div class="clear"></div>
+        </div> <!-- End subcontent id -->
+
+        <div id="content">
+            <section class="cadastrar form">
+                <form action="{% url 'cadastro_academia' %}" METHOD='POST'>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="Cadastrar"/>
+                </form>
+            </section>
+
+            <br class="clear">
+
+        </div> <!-- End content id -->
+{% endblock %}
