@@ -6,7 +6,6 @@ from model_utils import Choices
 
 
 class Colaborador(models.Model):
-
     """
     Model responsável pelos Colaboradores
     """
@@ -34,7 +33,7 @@ class OrgaoGoverno(models.Model):
     email = models.EmailField("Email", max_length = 250)
     telefone = models.CharField("Telefone", max_length=40)
     area_interesse = models.ManyToManyField('areas.Area', verbose_name="Área de Interesse")
-    
+
 
     class Meta:
         verbose_name_plural = "Instituições Governamentais"
@@ -83,7 +82,7 @@ class Empresa(models.Model):
     pessoa_para_contato = models.CharField("Pessoa para contato",max_length=250)
     email = models.EmailField("Email", max_length=250)
     telefone = models.CharField("Telefone", max_length=40)
-    
+
     area_interesse = models.ManyToManyField('areas.Area', verbose_name="Área de Interesse")
     is_startup = models.BooleanField("Marque aqui caso sua empresa seja uma start-up",default=False, blank=True)
 
