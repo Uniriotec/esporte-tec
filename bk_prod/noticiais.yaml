@@ -1,0 +1,151 @@
+- fields: {data_publicacao: !!timestamp '2013-12-05 18:08:01+00:00', descricao: "Site\
+      \ criado pelo MCTI para promover a intera\xE7\xE3o entre as institui\xE7\xF5\
+      es de pesquisa e as institui\xE7\xF5es governamentais", link: 'http://www.portalinovacao.mct.gov.br/',
+    link_imagem: 'http://www.sebrae.com.br/customizado/inovacao/acesse/apoio-e-fomento/portal_inovacao.jpg',
+    titulo: Portal Inovacao}
+  model: noticias.noticia
+  pk: 2
+- fields: {data_publicacao: !!timestamp '2013-12-05 18:15:39+00:00', descricao: Tecnologias
+      que tornaram o esporte ainda mais interessante, link: 'http://www.cio.com/special/slideshows/sports_innovations/slide08#slideshow',
+    link_imagem: 'http://www.cio.com/images/global/nav/hdr_logo_cio_133x72.png', titulo: Nine
+      Technology Innovations That Have Made Sports So Much Better for Fans}
+  model: noticias.noticia
+  pk: 3
+- fields: {data_publicacao: !!timestamp '2013-12-05 21:02:09+00:00', descricao: "Um\
+      \ estudo da PricewaterhouseCoopers que acaba de ser publicado sobre as receitas\
+      \ de televis\xE3o e outras m\xEDdias que pagam pelos direitos de transmiss\xE3\
+      o para as quatro principais ligas dos EUA (NBA, NFL, MLB e NHL) prev\xEA que\
+      \ os valores de mercado v\xE3o chegar a US$ 17 bilh\xF5es em 2017, um aumento\
+      \ de 42% se comparado ao resultado deste ano. ", link: 'http://terramagazine.terra.com.br/jogodenegocios/blog/',
+    link_imagem: 'http://www.ogirassol.com.br/adm/foto/a0f05b8112da62b0c5e1c7973d5a9778.jpg',
+    titulo: "Em 2017 ligas americanas v\xE3o receber US$ 17 bi em direitos de transmiss\xE3\
+      o"}
+  model: noticias.noticia
+  pk: 4
+- fields: {data_publicacao: !!timestamp '2013-12-05 21:06:12+00:00', descricao: "Site\
+      \ que permite a qualquer pessoa organizar seu pr\xF3prio campeonato com amigos",
+    link: 'http://futlog.net/auth/login', link_imagem: 'http://futlog.net/img/img_logo.png',
+    titulo: "crie seu pr\xF3prio campeonato"}
+  model: noticias.noticia
+  pk: 5
+- fields: {data_publicacao: !!timestamp '2013-12-05 21:09:28+00:00', descricao: "Artigo\
+      \ sobre os 7 princ\xEDpios que norteiam os inovadores", link: 'http://www.wired.com/business/2012/04/ff_spotfuture/3/',
+    link_imagem: 'http://www.wired.com/images/global_header/new/wired-logo.gif', titulo: How
+      to Spot the Future}
+  model: noticias.noticia
+  pk: 6
+- fields: {data_publicacao: !!timestamp '2013-12-05 21:14:00+00:00', descricao: "runkme\
+      \ \xE9 um sistema de apoio a treinadores, assessorias esportivas e atletas de\
+      \ corrida. Proporciona um acompanhamento total do desempenho dos atletas para\
+      \ os treinadores.", link: 'http://runkme.com/beta/pt', link_imagem: 'http://staticresourc.es/image/sprite-1-3.png',
+    titulo: 'sistema de apoio a treinadores, assessorias esportivas e atletas de corrida'}
+  model: noticias.noticia
+  pk: 7
+- fields: {data_publicacao: !!timestamp '2013-12-05 21:16:13+00:00', descricao: "Onefun\
+      \ re\xFAne os corredores de S\xE3o Paulo", link: 'https://www.facebook.com/onefun.com.br',
+    link_imagem: 'https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-prn2/8877_502572919786687_685895197_n.png',
+    titulo: "Forum para os f\xE3s da corrida"}
+  model: noticias.noticia
+  pk: 8
+- fields: {data_publicacao: !!timestamp '2013-12-05 21:21:06+00:00', descricao: "Em\
+      \ 1 minuto voc\xEA cria o seu grupo para praticar esportes, fazer  amigos e\
+      \ se divertir", link: 'http://uiner.com/', link_imagem: 'http://s3-sa-east-1.amazonaws.com/uiner/static/img/logo/uiner-204x60-white.png',
+    titulo: Pratique esportes com seus amigos}
+  model: noticias.noticia
+  pk: 9
+- fields: {data_publicacao: !!timestamp '2013-12-06 18:34:45+00:00', descricao: Site
+      do Programa de Observadores, link: 'http://po.guadalajara2011.org.mx/es/inscripcion',
+    link_imagem: 'http://po.guadalajara2011.org.mx/assets/images/layout/header_top_logo_towards2011.png',
+    titulo: Guadalajara 2011}
+  model: noticias.noticia
+  pk: 10
+- fields: {data_publicacao: !!timestamp '2013-12-06 18:36:19+00:00', descricao: "Rede\
+      \ Australiana para inova\xE7\xE3o no esporte", link: 'http://astn.com.au/',
+    link_imagem: 'http://astn.com.au/storage/template/logo.png', titulo: "Australia\
+      \ - Inova\xE7\xE3o no Esporte"}
+  model: noticias.noticia
+  pk: 11
+- fields: {data_publicacao: !!timestamp '2013-12-06 18:38:02+00:00', descricao: "Rede\
+      \ Cenesp \xE9 composta por centros de desenvolvimento de pesquisa cient\xED\
+      fica e tecnol\xF3gica na \xE1rea do esporte, treinamento e aperfei\xE7oamento\
+      \ de atletas", link: 'http://www.uel.br/projetos/cenesp/princ.php', link_imagem: 'http://www.uel.br/projetos/cenesp/imagens/index_01.jpg',
+    titulo: Rede Cenesp}
+  model: noticias.noticia
+  pk: 12
+- fields: {data_publicacao: !!timestamp '2013-12-06 18:40:03+00:00', descricao: "Sportcal\
+      \ can bring you truly independent \r\nglobal sports market intelligence and\
+      \ data, in \r\nmore sports than anyone else", link: 'http://www.sportcal.com/magazine/issue27/',
+    link_imagem: 'http://www.sportcal.com/images/General/Sportcal2013logo.png', titulo: Revista
+      sobre esporte e tecnologia}
+  model: noticias.noticia
+  pk: 13
+- fields: {data_publicacao: !!timestamp '2013-12-06 18:47:15+00:00', descricao: "The\
+      \ sports industry \u2014 from teams to leagues to stadium and track operators\
+      \ \u2014 is becoming more environmentally friendly.", link: 'http://www.nytimes.com/2011/10/26/business/sports-industry-expands-its-environmental-initiatives.html?_r=0',
+    link_imagem: 'http://graphics8.nytimes.com/images/misc/nytlogo152x23.gif', titulo: Meio
+      Ambiente e Esporte}
+  model: noticias.noticia
+  pk: 14
+- fields: {data_publicacao: !!timestamp '2013-12-06 18:55:18+00:00', descricao: "Rede\
+      \ de inova\xE7\xE3o do sul do Tirol ", link: 'http://www.tis.bz.it/', link_imagem: 'http://www.tis.bz.it/logo.gif',
+    titulo: 'Sul do Tirol '}
+  model: noticias.noticia
+  pk: 15
+- fields: {data_publicacao: !!timestamp '2013-12-06 18:57:09+00:00', descricao: 'M
+      educates approximately 25,000 students in 133 study programs. Its scientists
+      teach and perform research across multiple disciplines. The academic department
+      of Sport and Health Sciences is one of the 13 academic departments of the TUM.',
+    link: 'http://www.sg.tum.de/en/home/', link_imagem: 'https://lh5.ggpht.com/1Ay2Y3ThGwlNn8uzab1uxoH2pmCJH8fnhehx1wO9ZTlAZFiyl6v3GcBupZVsJa2Wf0201A=s170',
+    titulo: "the academic department of Sports and Health Sciences at Technische Universit\xE4\
+      t M\xFCnchen"}
+  model: noticias.noticia
+  pk: 16
+- fields: {data_publicacao: !!timestamp '2013-12-06 19:05:17+00:00', descricao: 'Adidas
+      Predator LZ II flies under the radar, it gets reviewed.', link: 'http://www.sbnation.com/mls/2013/7/31/4575558/adidas-predator-lz-ii-2-review',
+    link_imagem: 'http://cdn2.sbnation.com/images/chorus/modules/top_nav/big_sbn_logo.vd93497c.png',
+    titulo: "Inova\xE7\xE3o Adidas - Chuteira"}
+  model: noticias.noticia
+  pk: 17
+- fields: {data_publicacao: !!timestamp '2013-12-06 19:10:13+00:00', descricao: 'Andretti
+      Autosport has agreed to enter the Formula E World Championship, an electric
+      car racing series that will begin in September 2014.', link: 'http://www.sbnation.com/indycar/2013/7/17/4532438/andretti-to-run-electric-car-series-formula-e',
+    link_imagem: 'http://cdn2.sbnation.com/images/chorus/modules/top_nav/big_sbn_logo.vd93497c.png',
+    titulo: Andretti Autosport enters electric car series}
+  model: noticias.noticia
+  pk: 18
+- fields: {data_publicacao: !!timestamp '2013-12-06 19:15:05+00:00', descricao: 'Following
+      the  2012 Olympics  in London, the United States Olympic Committee (USOC) began
+      to focus more intensely on its digital media. ', link: 'http://bleacherreport.com/articles/1740836-usoc-modernizes-under-ceo-scott-blackmun?search_query=innovation',
+    link_imagem: 'http://upload.wikimedia.org/wikipedia/en/8/83/Bleacher-report-logo.png',
+    titulo: USOC Modernizes Under CEO Scott Blackmun}
+  model: noticias.noticia
+  pk: 19
+- fields: {data_publicacao: !!timestamp '2013-12-06 19:45:56+00:00', descricao: "Greenpeace\
+      \ had carefully planned a protest against Shell\u2019s plan to continue drilling\
+      \ for oil in the Arctic, and the banners that had been planted on the podium\
+      \ were unfurled via remote control.", link: 'http://bleacherreport.com/articles/1750311-why-greenpeace-protest-at-belgian-grand-prix-was-not-necessarily-anti-f1?search_query=innovation',
+    link_imagem: 'http://upload.wikimedia.org/wikipedia/en/8/83/Bleacher-report-logo.png',
+    titulo: ' Why Greenpeace Protest at Belgian Grand Prix Was Not Necessarily Anti-F1'}
+  model: noticias.noticia
+  pk: 20
+- fields: {data_publicacao: !!timestamp '2013-12-06 19:48:57+00:00', descricao: "We\
+      \ don\u2019t hear too much from startups coming out of Australia at Tech In\
+      \ Asia, but once in awhile we hear of some very interesting niche companies.\
+      \ This time, it\u2019s sports tech.", link: 'http://www.techinasia.com/5-australian-sports-startups-watching/',
+    link_imagem: 'http://joshuakev.in/wp-content/uploads/2012/08/Tech-in-Asia_logo_big1.png',
+    titulo: 5 Australian sports startups you should be watching}
+  model: noticias.noticia
+  pk: 21
+- fields: {data_publicacao: !!timestamp '2013-12-06 19:51:56+00:00', descricao: 'InYourCorner
+      is a crowdfunding platform dedicated to the sport, physical activity and health
+      & wellbeing sectors.  It is aimed at providing a revolutionary new funding system
+      for passionate people to help them reach their goals.', link: 'http://www.inyourcorner.com.au/help/faq/inyourcorner-basics',
+    link_imagem: 'http://www.inyourcorner.com.au/upload/orig/12197logo.gif', titulo: Startup
+      Australiana _ In your corner}
+  model: noticias.noticia
+  pk: 22
+- fields: {data_publicacao: !!timestamp '2013-12-06 19:54:14+00:00', descricao: 'The
+      work that Major League Baseball clubs are outing into finding ways to activate
+      and engage in the social media space is growing every day, and leading that
+      charge is the San Francisco Giants. While it may seem at the outset that San
+      Francisco, not that far removed from their first World Championship

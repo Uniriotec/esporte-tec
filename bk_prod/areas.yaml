@@ -1,0 +1,10 @@
+- fields: {level: 0, lft: 1, nome: Tecnologia, parent: null, rght: 4, tree_id: 2}
+  model: areas.area
+  pk: 1
+- fields: {level: 1, lft: 2, nome: "Inova\xE7\xE3o Industrial", parent: 1, rght: 3,
+    tree_id: 2}
+  model: areas.area
+  pk: 2
+- fields: {level: 0, lft: 1, nome: Desempenho, parent: null, rght: 2, tree_id: 1}
+  model: areas.area
+  pk: 3
