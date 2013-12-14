@@ -18,6 +18,7 @@ class AbsLink(models.Model):
 
     class Meta:
         abstract = True
+        ordering = ['-data_publicacao',]
 
 
 class Noticia(AbsLink):
@@ -25,7 +26,8 @@ class Noticia(AbsLink):
     Representa um link para uma noticia noticia no sistema
     Herda de AbsLink
     """
-    class Meta:
+    class Meta(AbsLink.Meta):
+        abstract = False
         verbose_name_plural = "notícias"
 
     def __unicode__(self):
@@ -44,7 +46,8 @@ class Edital(AbsLink):
             verbose_name="Orgão do Governo"
     )
 
-    class Meta:
+    class Meta(AbsLink.Meta):
+        abstract = False
         verbose_name_plural = "editais"
 
     def __unicode__(self):
@@ -56,7 +59,8 @@ class PoliticaPublica(AbsLink):
     Herda de AbsLink
     """
 
-    class Meta:
+    class Meta(AbsLink.Meta):
+        abstract = False
         verbose_name_plural = "políticas públicas"
         verbose_name = "política pública"
 
