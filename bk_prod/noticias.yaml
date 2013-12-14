@@ -144,8 +144,3 @@
       Australiana _ In your corner}
   model: noticias.noticia
   pk: 22
-- fields: {data_publicacao: !!timestamp '2013-12-06 19:54:14+00:00', descricao: 'The
-      work that Major League Baseball clubs are outing into finding ways to activate
-      and engage in the social media space is growing every day, and leading that
-      charge is the San Francisco Giants. While it may seem at the outset that San
-      Francisco, not that far removed from their first World Championship
