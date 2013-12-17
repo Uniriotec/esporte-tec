@@ -16,14 +16,17 @@ urlpatterns = patterns('',
 
      url(r'^', include('esporte_tec.noticias.urls')),
      url(r'^', include('esporte_tec.membros.urls')),
-     
-     
+
+
      # url(r'^noticias/$', TemplateView.as_view(template_name="noticias.html"), name='noticias'),
      #comentar essa url e mapear para a nova view(de editais) no urls da app noticias
      #url(r'^editais/$', TemplateView.as_view(template_name="editais.html"), name='editais'),
      #comentar essa url e mapear para a nova view(de politicas) no urls da app noticias
      url(r'^politicas/$', TemplateView.as_view(template_name="politicas.html"), name='politicas'),
 
+
+     # sitemap
+     url(r'^sitemap.xml$', TemplateView.as_view(template_name="sitemap/sitemap.xml"), name='sitemap'),
 
      url(r'^admin/', include(admin.site.urls)),
 )

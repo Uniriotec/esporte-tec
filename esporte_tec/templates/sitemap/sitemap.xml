@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.esporte-tec.com.br/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.esporte-tec.com.br/noticias/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.esporte-tec.com.br/membros/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.esporte-tec.com.br/cadastro/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.esporte-tec.com.br/sobre/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.esporte-tec.com.br/contato/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.esporte-tec.com.br/editais/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.esporte-tec.com.br/politicas/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
