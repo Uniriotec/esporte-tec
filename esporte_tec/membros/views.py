@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*
 from django.shortcuts import redirect
+from django.http import HttpResponse
+
 
 from annoying.decorators import render_to
 
@@ -7,6 +9,8 @@ from esporte_tec.membros.forms import EmpresaForm
 from esporte_tec.membros.forms import ColaboradorForm
 from esporte_tec.membros.forms import AcademiaForm
 from esporte_tec.membros.forms import GovernoForm
+
+from esporte_tec.membros.models import Colaborador
 
 
 @render_to("cadastro_empresa.html")
@@ -83,3 +87,9 @@ def cadastrar_instituicao_governamental(request):
     return{
         'form': form,
     }
+
+@render_to("colaborador.html")
+def exibir_informacoes_colaborador(request):
+    
+    query_results = Colaborador.objects.all()
+    return HttpResponse(query_results)    
