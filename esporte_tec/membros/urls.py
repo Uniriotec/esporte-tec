@@ -6,6 +6,7 @@ from esporte_tec.membros import views
 urlpatterns = patterns('',
 
     url(r'^membros/$', TemplateView.as_view(template_name="listagem_selecao.html"), name='membros'),
+    url(r'^membros/(?P<tipo_membro>.+)/(?P<id_membro>\d+)/$', views.detalhar_membro , name='detalhar_membro'),
     url(r'^membros/(?P<tipo_membro>.+)/$', views.listar_membros , name='listar_membros'),
     url(r'^cadastro_empresa/$', views.cadastrar_empresa, name='cadastro_empresa'),
     url(r'^cadastro_colaborador/$', views.cadastrar_colaborador, name='cadastro_colaborador'),
