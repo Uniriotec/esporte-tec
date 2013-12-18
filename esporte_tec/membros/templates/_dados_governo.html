@@ -1,0 +1,35 @@
+<section>
+	<p>
+		<strong>Razão Social: </strong>
+		{{ membro.razao_social }}
+	</p>
+	    <strong>Departamento: </strong>
+	    {{ membro.departamento }}
+	<p>
+		<strong>Pessoa para Contato: </strong>
+		{{ membro.contato }}
+	</p>
+	    <strong>Email: </strong>
+	    {{ membro.email }} 
+	<p>
+		<strong>Telefone: </strong>
+		{{ membro.telefone }}
+	</p>
+	    <strong>Área de Interesse: </strong>
+	    {% for area in membro.area_interesse.all %}
+	        {{ area.nome_completo }}
+	    {% endfor %}   
+	</p>	
+<section>
+
+
+
+
+
+
+
+
+
+
+
+

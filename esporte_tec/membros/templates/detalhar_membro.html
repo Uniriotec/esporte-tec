@@ -14,6 +14,12 @@
     {% if tipo_membro == 'colaborador' %}
         {% include "_dados_colaborador.html" %}
     {% endif %}
+    {% if tipo_membro == 'governo' %}
+        {% include "_dados_governo.html" %}
+    {% endif %}
+    {% if tipo_membro == 'academia' %}
+         {% include "_dados_academia.html" %}
+    {% endif %}      
 </div> <!--- End content id --->
 
 {% endblock %}

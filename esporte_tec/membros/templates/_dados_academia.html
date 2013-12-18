@@ -1,0 +1,40 @@
+<section>
+    <p>
+        <strong>Razão Social ou Nome Fantasia: </strong>
+        {{ membro.razao_social }}
+    </p>
+    <p>
+        <strong>Departamento: </strong>
+        {{ membro.departamento }}
+    </p>
+    <p>
+        <strong>Site do Departamento: </strong>
+        {{ membro.site_departamento }}
+    </p>
+    <p>
+        <strong>Contato: </strong>
+        {{ membro.contato }}
+    </p>
+    <p>
+        <strong>Email: </strong>
+        {{ membro.email }}
+    </p>
+    <p>
+        <strong>Telefone: </strong>
+        {{ membro.telefone }}
+    </p>
+    <p>
+        <strong>Área de Interesse: </strong>
+        {% for area in membro.area_interesse.all %}
+            {{ area.nome_completo }};
+        {% endfor %}
+    </p>
+    <p>
+        <strong>Área de Pesquisa: </strong>
+        {{ membro.area_pesquisa }}
+    </p>
+    <p>
+        <strong>Resumo Projeto: </strong>
+        {{ membro.resumo_projeto }}
+    </p>
+</section>
