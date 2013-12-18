@@ -11,6 +11,9 @@
     {% if tipo_membro == 'empresa' %}
         {% include "_dados_empresa.html" %}
     {% endif %}
+    {% if tipo_membro == 'colaborador' %}
+        {% include "_dados_colaborador.html" %}
+    {% endif %}
 </div> <!--- End content id --->
 
 {% endblock %}

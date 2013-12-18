@@ -1,0 +1,16 @@
+<section>
+    <p>
+        <strong>Nome: </strong>
+        {{ membro.nome }}
+    </p>
+    <p>
+        <strong>Email: </strong>
+        {{ membro.email }}
+    </p>
+    <p>
+        <strong>Área de Interesse: </strong>
+        {% for area in membro.area_interesse.all %}
+            {{ area.nome_completo }};
+        {% endfor %}
+    </p>
+</section>
