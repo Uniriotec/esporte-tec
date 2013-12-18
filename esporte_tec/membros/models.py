@@ -3,9 +3,12 @@ from django.db import models
 
 from model_utils import Choices
 
+class NomeOrRazaoMixing(object):
 
+    def get_nome_or_razao(self):
+        return self.razao_social
 
-class Colaborador(models.Model):
+class Colaborador(models.Model, NomeOrRazaoMixing):
     """
     Model responsável pelos Colaboradores
     """
@@ -21,8 +24,11 @@ class Colaborador(models.Model):
     def __unicode__(self):
         return "%s - %s" % (self.nome, self.email)
 
+    def get_nome_or_razao(self):
+        return self.nome
 
-class OrgaoGoverno(models.Model):
+
+class OrgaoGoverno(models.Model, NomeOrRazaoMixing):
     """
     Model de cadastro de Governo
     """
@@ -43,7 +49,7 @@ class OrgaoGoverno(models.Model):
         return "%s - %s - %s - %s - %s" % (self.razao_social, self.departamento, self.contato, self.email, self.telefone)
 
 
-class Academia(models.Model):
+class Academia(models.Model, NomeOrRazaoMixing):
     """
     Model de cadastro de Instituições Acadêmicas
     """
@@ -72,7 +78,7 @@ class Academia(models.Model):
         return "%s - %s - %s - %s - %s - %s - %s" % (self.razao_social, self.departamento, self.site_departamento, self.contato, self.email, self.telefone, self.resumo_projeto)
 
 
-class Empresa(models.Model):
+class Empresa(models.Model, NomeOrRazaoMixing):
     """
     Model para o cadastro de Startups e Empresas
     """

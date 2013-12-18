@@ -3,6 +3,8 @@ from django.shortcuts import redirect
 
 from annoying.decorators import render_to
 
+from esporte_tec.membros.models import *
+
 from esporte_tec.membros.forms import EmpresaForm
 from esporte_tec.membros.forms import ColaboradorForm
 from esporte_tec.membros.forms import AcademiaForm
@@ -83,3 +85,20 @@ def cadastrar_instituicao_governamental(request):
     return{
         'form': form,
     }
+
+
+def _get_dados_listar_membros(tipo_membro):
+    membros = []
+    titulo_membros = ""
+    if tipo_membro == 'empresa':
+        membros = Empresa.objects.all()
+        titulo_membros = "Empresas"
+
+    return {'membros' : membros, 'titulo_membros' : titulo_membros}
+
+@render_to("listagem_membro.html")
+def listar_membros(request, tipo_membro):
+
+    dados_membros = _get_dados_listar_membros(tipo_membro)
+
+    return dados_membros
