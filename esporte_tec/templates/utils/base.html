@@ -86,7 +86,8 @@
                                 <li class="current"><a href="{% url "index" %}">HOME</a></li>
                                 <li><a href="{% url "noticias" %}">NOTÍCIAS</a></li>
                                 <li><a href="{% url "membros" %}">MEMBROS</a></li>
-                                <li class="sub"><a href>CADASTRAR</a>
+                                <li class="sub"><a href="{% url "cadastro" %}">CADASTRAR</a>
+                                    {% comment %}
                                     <ul class="submenu">
                                         <li><a href="{% url "cadastro" %}">Seja um membro</a></li>
                                        <!-- <li><a href="#">Quem pode participar</a></li>
@@ -94,6 +95,7 @@
                                         <li><a href="#">Forum de membros</a></li>
                                         <li><a href="#">FAQs</a></li>-->
                                     </ul>
+                                    {% endcomment %}
                                 </li>
                                 <li><a href="{% url "sobre" %}">SOBRE</a></li>
                                 <li><a href="{% url "contato" %}">CONTATO</a></li>
