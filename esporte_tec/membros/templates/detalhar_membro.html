@@ -1,4 +1,5 @@
 {% extends "utils/base.html"%}
+{% block page-title %}{{ block.super }} - Detalhes de  {{ membro.get_nome_or_razao }}{% endblock %}
 {% block content %}
 <div id="subcontent">
        <h2>Dados de {{ membro.get_nome_or_razao }}</h2>
