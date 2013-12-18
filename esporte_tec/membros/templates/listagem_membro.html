@@ -8,12 +8,11 @@
 
 <div id="content">
     {% for membro in membros %}
-        <section class="membros">
-            <a href="{% url 'detalhar_membro' tipo_membro='empresa' id_membro=membro.pk %}" target="_blank">
-                <h3>{{ membro.get_nome_or_razao }}</h3>
-            <p style="color:black;"></p></a>
+        <section class="membros-{% cycle 'odd' 'even' %}">
+            <a href="{% url 'detalhar_membro' tipo_membro=tipo_membro id_membro=membro.pk %}" target="_blank">
+                {{ membro.get_nome_or_razao }}
+            </a>
         </section>
-
     {% endfor %}
 </div> <!--- End content id --->
 

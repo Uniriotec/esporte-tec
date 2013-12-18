@@ -96,10 +96,22 @@ def _get_dados_listar_membros(tipo_membro):
         membros = Empresa.objects.all()
         titulo_membros = "Empresas"
 
+    elif tipo_membro == 'governo':
+        membros = OrgaoGoverno.objects.all()
+        titulo_membros = "Inst. Governamentais"
+
+    elif tipo_membro == 'colaborador':
+        membros = Colaborador.objects.all()
+        titulo_membros = "Colaboradores"
+
+    elif tipo_membro == 'academia':
+        membros = Academia.objects.all()
+        titulo_membros = "Inst. Acadêmicas"
+
     else:
         raise Http404
 
-    return {'membros' : membros, 'titulo_membros' : titulo_membros}
+    return {'membros' : membros, 'titulo_membros' : titulo_membros, 'tipo_membro': tipo_membro}
 
 @render_to("listagem_membro.html")
 def listar_membros(request, tipo_membro):
@@ -116,7 +128,22 @@ def _get_dados_detalhar_membro(tipo_membro, id_membro):
         membro = get_object_or_404(Empresa,pk=id_membro)
         titulo_membros = "Empresas"
 
-    return {'membro' : membro, 'titulo_membros' : titulo_membros}
+    elif tipo_membro == 'governo':
+        membro = get_object_or_404(OrgaoGoverno,pk=id_membro)
+        titulo_membros = "Inst. Governamentais"
+
+    elif tipo_membro == 'colaborador':
+        membro = get_object_or_404(Colaborador,pk=id_membro)
+        titulo_membros = "Colaboradores"
+
+    elif tipo_membro == 'academia':
+        membro = get_object_or_404(Academia,pk=id_membro)
+        titulo_membros = "Inst. Acadêmicas"
+
+    else:
+        raise Http404
+
+    return {'membro' : membro, 'titulo_membros' : titulo_membros, 'tipo_membro': tipo_membro}
 
 @render_to("detalhar_membro.html")
 def detalhar_membro(request, tipo_membro, id_membro):

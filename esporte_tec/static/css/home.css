@@ -1,15 +1,15 @@
 /* ==== Sub Content ==== */
 
-.home-title { 
-	font: 80px/85px 'Baumans', sans-serif; 
-	text-transform: uppercase; 
+.home-title {
+	font: 80px/85px 'Baumans', sans-serif;
+	text-transform: uppercase;
 	width: 500px;
 	position: relative;
 
 }
-		
-.sub-title { 
-	color: #89c758; 
+
+.sub-title {
+	color: #89c758;
 }
 
 .join{
@@ -42,10 +42,16 @@
 
 /* ==== Partners ==== */
 
-.partners-block { 
-	padding-bottom: 10px; 
+.partners-block {
+	padding-bottom: 10px;
 }
 
-#partners img { 
+#partners img {
 	margin: 15px;
+}
+
+/* ==== Membros ====*/
+.membros-even {
+    background-color: #ffffff;
+
 }
