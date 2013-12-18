@@ -1,0 +1,40 @@
+{% extends "utils/base.html"%}
+{% block content %}
+<div id="subcontent">
+       <h2>Membros</h2>
+       <div class="clear"></div>
+</div> <!-- End subcontent id -->
+
+                <div id="content">
+                            <section class="members left">
+                                <a href="{% url 'index' %}">
+                                    <img src="{{ STATIC_URL }}img/colaborador.png" alt="Colaborador">
+                                    <p class="title-members">Colaborador</p>
+                                </a>
+                        </section>
+
+                        <section class="members left">
+                                <a href="{% url 'index' %}">
+                                    <img src="{{ STATIC_URL }}img/empresa.png" alt="Empresa">
+                                    <p class="title-members">Empresa</p>
+                                </a>
+                        </section>
+
+                        <section class="members left">
+                                <a href="{% url 'index' %}">
+                                    <img src="{{ STATIC_URL }}img/governo.png" alt="Governo">
+                                    <p class="title-members">Inst. Governamental</p>
+                                </a>
+                        </section>
+
+                        <section class="members left">
+                                <a href="{% url 'index' %}">
+                                    <img src="{{ STATIC_URL }}img/academia.png" alt="Academia">
+                                    <p class="title-members">Instituição Acadêmica</p>
+                                </a>
+                        </section>
+
+                        <br class="clear">
+
+                </div> <!--- End content id --->
+{% endblock %}

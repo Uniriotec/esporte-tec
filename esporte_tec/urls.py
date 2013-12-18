@@ -8,7 +8,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
 
      url(r'^$', TemplateView.as_view(template_name="index.html"), name='index'),
-     url(r'^membros/$', TemplateView.as_view(template_name="membros.html"), name='membros'),
      url(r'^cadastro/$', TemplateView.as_view(template_name="cadastro.html"), name='cadastro'),
      url(r'^contato/$', TemplateView.as_view(template_name="contato.html"), name='contato'),
      url(r'^sobre/$', TemplateView.as_view(template_name="sobre.html"), name='sobre'),
