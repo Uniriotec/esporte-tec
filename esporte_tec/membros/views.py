@@ -43,9 +43,9 @@ def cadastrar_colaborador(request):
 
     if request.method == 'POST':
         form = ColaboradorForm(request.POST)
-        form.save()
-
-        return redirect('sucesso')
+        if form.is_valid():
+            form.save()
+            return redirect('sucesso')
 
     else:
         form = ColaboradorForm()
@@ -59,9 +59,10 @@ def cadastrar_instituicao_academica(request):
 
     if request.method == 'POST':
         form = AcademiaForm(request.POST)
-        form.save()
+        if form.is_valid():
+            form.save()
 
-        return redirect('sucesso')
+            return redirect('sucesso')
 
     else:
         form = AcademiaForm()
@@ -75,9 +76,10 @@ def cadastrar_instituicao_governamental(request):
 
     if request.method == 'POST':
         form = GovernoForm(request.POST)
-        form.save()
+        if form.is_valid():
+            form.save()
 
-        return redirect('sucesso')
+            return redirect('sucesso')
 
     else:
         form = GovernoForm()
