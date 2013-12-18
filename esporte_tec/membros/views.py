@@ -104,7 +104,6 @@ def _get_dados_listar_membros(tipo_membro):
 @render_to("listagem_membro.html")
 def listar_membros(request, tipo_membro):
 
-    print "listar_membros"
     dados_membros = _get_dados_listar_membros(tipo_membro)
 
     return dados_membros
@@ -121,7 +120,6 @@ def _get_dados_detalhar_membro(tipo_membro, id_membro):
 
 @render_to("detalhar_membro.html")
 def detalhar_membro(request, tipo_membro, id_membro):
-    print "detalhar"
 
     dados_membro = _get_dados_detalhar_membro(tipo_membro, id_membro)
 
