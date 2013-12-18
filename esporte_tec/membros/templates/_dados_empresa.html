@@ -1,0 +1,32 @@
+<section>
+    <p>
+        <strong>Razão Social ou Nome Fantasia: </strong>
+        {{ membro.razao_social }}
+    </p>
+    <p>
+        <strong>Site: </strong>
+        {{ membro.site }}
+    </p>
+    <p>
+        <strong>Pessoa para contato: </strong>
+        {{ membro.pessoa_para_contato }}
+    </p>
+    <p>
+        <strong>Email: </strong>
+        {{ membro.email }}
+    </p>
+    <p>
+        <strong>Telefone: </strong>
+        {{ membro.telefone }}
+    </p>
+    <p>
+        <strong>É uma startup?: </strong>
+        {% if membro.is_startup %}Sim{% else %}Não{% endif %}
+    </p>
+    <p>
+        <strong>Área de Interesse: </strong>
+        {% for area in membro.area_interesse.all %}
+            {{ area.nome_completo }};
+        {% endfor %}
+    </p>
+</section>

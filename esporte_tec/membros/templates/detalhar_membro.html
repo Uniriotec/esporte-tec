@@ -8,6 +8,9 @@
 </div> <!-- End subcontent id -->
 
 <div id="content">
+    {% if tipo_membro == 'empresa' %}
+        {% include "_dados_empresa.html" %}
+    {% endif %}
 </div> <!--- End content id --->
 
 {% endblock %}
