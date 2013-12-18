@@ -1,13 +1,6 @@
 # -*- coding: utf-8 -*
-<<<<<<< HEAD
-
 from django.http import Http404
 from django.shortcuts import redirect, get_object_or_404
-=======
-from django.shortcuts import redirect
-from django.http import HttpResponse
-
->>>>>>> Tentativa de listar informações de membros cadastrados
 
 from annoying.decorators import render_to
 
@@ -17,9 +10,6 @@ from esporte_tec.membros.forms import EmpresaForm
 from esporte_tec.membros.forms import ColaboradorForm
 from esporte_tec.membros.forms import AcademiaForm
 from esporte_tec.membros.forms import GovernoForm
-
-from esporte_tec.membros.models import Colaborador
-
 
 @render_to("cadastro_empresa.html")
 def cadastrar_empresa(request):
@@ -96,8 +86,6 @@ def cadastrar_instituicao_governamental(request):
         'form': form,
     }
 
-<<<<<<< HEAD
-
 def _get_dados_listar_membros(tipo_membro):
     membros = []
     titulo_membros = ""
@@ -160,10 +148,3 @@ def detalhar_membro(request, tipo_membro, id_membro):
     dados_membro = _get_dados_detalhar_membro(tipo_membro, id_membro)
 
     return dados_membro
-=======
-@render_to("colaborador.html")
-def exibir_informacoes_colaborador(request):
-    
-    query_results = Colaborador.objects.all()
-    return HttpResponse(query_results)    
->>>>>>> Tentativa de listar informações de membros cadastrados
