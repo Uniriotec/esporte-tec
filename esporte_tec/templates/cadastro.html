@@ -4,33 +4,41 @@
        		<h2>Membros</h2>
        		<div class="clear"></div>
 		</div> <!-- End subcontent id -->
-		
-		<div id="content">	
-            		<section class="members left">
+
+		<div id="content">
+    		<section class="members left">
 				<img src="{{ STATIC_URL }}img/colaborador.png" alt="Colaborador">
-				<p class="title-members">Colaborador</p>				
-				<p>Se você gosta de esporte, é inventor e tem interesse em novas tecnologias, cadastre-se no Esporte_TEC  para discutir a inovação com que a faz.</p>  <p>Conheça esse nicho de mercado e participe da rede de colaboração. Seu cadastro e participação são gratuitos.</p>
+                <div class="members-description">
+    				<p class="title-members">Colaborador</p>
+    				<p>Se você gosta de esporte, é inventor e tem interesse em novas tecnologias, cadastre-se no Esporte_TEC  para discutir a inovação com que a faz.</p>  <p>Conheça esse nicho de mercado e participe da rede de colaboração. Seu cadastro e participação so gratuitos.</p>
+                </div>
 				<button onclick="window.location.href='{% url "cadastro_colaborador" %}'">Cadastrar-se</button>
 			</section>
-			
+
 			<section class="members left">
 				<img src="{{ STATIC_URL }}img/empresa.png" alt="Empresa">
-				<p class="title-members">Empresa</p>				
+                <div class="members-description">
+				<p class="title-members">Empresa</p>
 				<p>Não importa o tamanho da sua empresa , no Esporte_TEC empresas pequenas, médias, grandes e individuais são bem-vindas.</p><p>Faça parte dessa rede de colaboração voltada a inovação no esporte. Seu cadastro e participação são gratuitos.</p>
+                </div>
 				<button onclick="window.location.href='{% url "cadastro_empresa" %}'">Cadastrar-se</button>
 			</section>
 
 			<section class="members left">
 				<img src="{{ STATIC_URL }}img/governo.png" alt="Governo">
-				<p class="title-members">Inst. Governamental</p>				
+                <div class="members-description">
+				<p class="title-members">Inst. Governamental</p>
 				<p>O governo volta-se cada vez mais para o fomento à inovação. A política pública do esporte também fomenta a inovação através de vários editais já lançados no Brasil.</p><p>Conheça essas políticas cadastrando-se no Esporte_TEC. Participe dessa rede de colaboração. Seu cadastro e participação são gratuitos.</p>
+                </div>
 				<button onclick="window.location.href='{% url "cadastro_governo" %}'">Cadastrar-se</button>
 			</section>
 
 			<section class="members left">
 				<img src="{{ STATIC_URL }}img/academia.png" alt="Academia">
-				<p class="title-members">Instituição Acadêmica</p>				
+                <div class="members-description">
+				<p class="title-members">Instituição Acadêmica</p>
 				<p>O número de projetos de pesquisa voltados a inovação no esporte estão crescendo no Brasil, entretanto muito ainda necessita ser feito.</p><p>  Seja membro do Esporte_TEC e participe dessa rede de colaboração para o fomento da inovação no esporte. Seu cadastro e participação são gratuitos.</p>
+                </div>
 				<button onclick="window.location.href='{% url "cadastro_academia" %}'">Cadastrar-se</button>
 			</section>
 
